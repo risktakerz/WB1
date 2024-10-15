@@ -13,15 +13,20 @@
       <!---------------element-------------------->
       <!--opening tag----><!--the content--><!--closing tag---->
       <div id="messageDiv"><!--the content--></div>
+      <input id="nameInput" type="text" value="" placeholder="enter name" />
+      <button onclick="printMessage();">Print Message</button>
     </main>
     <script>
       // where the javascript goes
       "use strict"; //fixes broken things in JavaScript
 
-      // Get HTML element into a variable (box)
+      //#1 Get HTML element into a variable (box)
       //declare var|ass| html file
       // document is an object with lots of properties that represents the entire html document
       // declare var to hold element then ass into that var whateve is returned from calling the function getElement...
+      // function is a verb is an action that can return something
+
+      //1.1 Get div element
       let messageDiv = document.getElementById("messageDiv");
       console.log(messageDiv);
       // var messageDiv = {
@@ -30,15 +35,42 @@
       //     tagName: "div",
       // }
 
+      //1.2 get input element
+      let nameInput = document.getElementById("nameInput");
+      // var nameInput = {
+      //     id: "nameInput",
+      //     value: "",
+      //     tagName: "input",
+      //     type: "text"
+      // }
+
       // #2 Set the element content
+
+      //2.1 set div content
       // element.innerText = "hi";
       //or
       // element.textContext = "hi";
+
       messageDiv.innerText = "hi";
+
+      //2.2 set input content
+      // inputElement.value = "Melina"
+      nameInput.value = "Melina";
 
       //#3 Get the element content
 
+      //3.1 get div content
+      let currentMessage = messageDiv.innerText;
+      console.log(currentMessage);
+
+      //3/2 get input content
+      let currentName = nameInput.value;
+      console.log(currentName);
+
       //#4 Create a function to do something, (Ex. set the element content)
+      function printMessage() {
+        messageDiv.innerText = "hi inside function";
+      }
 
       //#5 Make that function happen when a user event happens (Ex. add button and on click)
     </script>

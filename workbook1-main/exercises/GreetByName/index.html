@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>First Calculator</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Calculator</h1>
+        <label for="firstInput">Number 1</label>
+
+        <input type="number" id="firstInput" />
+        <label for="firstInput">Number 2</label>
+        <input type="number" id="secondInput" />
+        <button onclick="add()">Add</button>
+        <button onclick="subtractNumber">Subtract</button>
+        <button onclick="multiplyNumber">Multiply</button>
+        <button onclick="divideNumber">Divide</button>
+        <label for="answer">Answer</label>
+        <input type="number" id="answer" />
+      </form>
+    </main>
+    <script>
+      const firstInput = document.getElementById("firstInput");
+      const secondInput = document.getElementById("secondInput");
+      const thirdInput = document.getElementById("thirdInput");
+
+      function add() {
+        const num1 = parseFloat(firstInput.value);
+        const num2 = parseFloat(secondInput.value);
+        const answer = num1 + num2;
+        answer.textContent = answer;
+      }
+    </script>
+    <footer></footer>
+  </body>
+</html>
