@@ -7,13 +7,29 @@
   </head>
   <body>
     <main>
-      <div id="waldoDiv">hello</div>
+      <input type="text" id="nameInput" placeholder="enter your name" />
+      <div id="greetingDiv"></div>
+      <button onclick="greet()">Hello</button>
+      <button onclick="add()">Add</button>
+      <button onclick="subtract()">Subtract</button>
     </main>
     <script>
       "use strict";
-      var waldoDiv = document.getElementById("waldoDiv");
-      console.log(waldoDiv);
-      waldoDiv.innerText = "Waldo";
+      var nameInput = document.getElementById("nameInput");
+      var greetingDiv = document.getElementById("greetingDiv");
+
+      function greet() {
+        console.log("Hello");
+      }
+      function add(x, y) {
+        console.log(x + y);
+      }
+      add(2, 8);
+
+      function subtract(x, y) {
+        console.log(x - y);
+      }
+      subtract(2, 1);
     </script>
   </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greet By Name</title>
+  </head>
+  <body>
+    <main>
+      <!-- where the html goes -->
+      <!-- choose an id that is a combination of what's in the element-->
+      <!-- and what type of element it is -->
+      <!---------------element-------------------->
+      <!--opening tag----><!--the content--><!--closing tag---->
+      <div id="messageDiv"><!--the content--></div>
+    </main>
+    <script>
+      // where the javascript goes
+      "use strict"; //fixes broken things in JavaScript
+
+      // Get HTML element into a variable (box)
+      //declare var|ass| html file
+      // document is an object with lots of properties that represents the entire html document
+      // declare var to hold element then ass into that var whateve is returned from calling the function getElement...
+      let messageDiv = document.getElementById("messageDiv");
+      console.log(messageDiv);
+      // var messageDiv = {
+      //     id: "messageDiv",
+      //     innerText: "",
+      //     tagName: "div",
+      // }
+
+      // #2 Set the element content
+      // element.innerText = "hi";
+      //or
+      // element.textContext = "hi";
+      messageDiv.innerText = "hi";
+
+      //#3 Get the element content
+
+      //#4 Create a function to do something, (Ex. set the element content)
+
+      //#5 Make that function happen when a user event happens (Ex. add button and on click)
+    </script>
+  </body>
+</html>
+
+<!-- HOW TO RUN JS: -->
+<!-- 1. if you've got a javascript file without references to the document or the window
+ then you want to run it using code runner -->
+<!-- 2.if you've got a javascript but it references an html page then run it with live server (GO LIVE) -->
