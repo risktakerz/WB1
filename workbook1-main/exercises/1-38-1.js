@@ -17,3 +17,4 @@ console.log(gender);
 
 var dateOfBirth = "09/03/2000";
 console.log(dateOfBirth);
+// log value
